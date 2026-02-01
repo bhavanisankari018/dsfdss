@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Cloud Platform – Cloud Service Management UI</title>
+  <style>
+    body{
+      margin:0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg,#e0f2ff,#f0f5ff);
+      color:#1f2937;
+    }
+    header{
+      background: linear-gradient(90deg,#1a73e8,#4285f4);
+      color:white;
+      padding:50px 20px;
+      text-align:center;
+      border-bottom-left-radius:30px;
+      border-bottom-right-radius:30px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    }
+    header h1{margin:0;font-size:38px;text-shadow:1px 1px 6px rgba(0,0,0,0.2);}
+    header p{margin-top:8px;font-size:18px;opacity:0.95;}
+
+    .container{padding:50px 60px;}
+
+    .section{
+      background: linear-gradient(135deg,#ffffff,#e6f0ff);
+      padding:35px;
+      margin-bottom:35px;
+      border-radius:25px;
+      box-shadow:0 12px 35px rgba(0,0,0,0.15);
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .section:hover{
+      transform:translateY(-8px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.25);
+    }
+    .section h2{
+      color:#1a73e8;
+      margin-bottom:15px;
+      border-left:6px solid #4285f4;
+      padding-left:14px;
+      font-size:24px;
+    }
+    .section p{line-height:1.8;font-size:16px;}
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+      margin-top:25px;
+    }
+    .card{
+      background: linear-gradient(135deg,#e0f7ff,#ffffff);
+      padding:30px;
+      border-radius:20px;
+      border-top:6px solid #4285f4;
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,0.2);}
+    .card h3{margin-bottom:12px;color:#1a1a1a;font-size:20px;}
+    .card p{font-size:15px;line-height:1.6;}
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:30px;
+      font-size:15px;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    }
+    th,td{
+      padding:16px;
+      border:1px solid #d1d5db;
+    }
+    th{
+      background: linear-gradient(90deg,#1a73e8,#42a1f5);
+      color:#ffffff;
+      text-align:left;
+    }
+    tr:nth-child(even){background:#f0f5ff;}
+
+    .highlight{
+      background: #e0f2ff;
+      border-left:6px solid #1a73e8;
+      padding:20px;
+      margin-top:20px;
+      border-radius:15px;
+      font-size:15px;
+      color:#1a1a1a;
+    }
+
+    footer{
+      background:#1a1a1a;
+      color:#ffffff;
+      text-align:center;
+      padding:25px;
+      font-size:15px;
+      border-top-left-radius:30px;
+      border-top-right-radius:30px;
+      box-shadow:0 -5px 20px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Google Cloud Platform (GCP)</h1>
+  <p>Cloud Service Management – Detailed UI Explanation</p>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Overview of Google Cloud Platform</h2>
+    <p>
+      Google Cloud Platform (GCP) is a cloud computing platform provided by Google that delivers
+      infrastructure, platform, and software services over the internet. In Cloud Service Management,
+      GCP provides a centralized console to provision, monitor, secure, and manage cloud services efficiently.
+    </p>
+    <div class="highlight">
+      <b>UI View:</b> The GCP Console acts as a single dashboard where administrators can control
+      compute, storage, networking, security, monitoring, and billing.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Core GCP Services for Cloud Service Management</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Compute Engine</h3>
+        <p>Create VM instances, configure CPU/memory, start/stop instances, monitor performance.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Storage</h3>
+        <p>Manage buckets, storage usage, access permissions, and backups visually.</p>
+      </div>
+      <div class="card">
+        <h3>Google Kubernetes Engine (GKE)</h3>
+        <p>Monitor clusters, nodes, workloads, and scale applications through the UI.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Monitoring</h3>
+        <p>Visual dashboards for CPU, memory, latency, uptime, and alerts for SLA compliance.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Cloud Service Management Functions in GCP UI</h2>
+    <table>
+      <tr>
+        <th>Function</th>
+        <th>GCP UI Representation</th>
+      </tr>
+      <tr>
+        <td>Service Provisioning</td>
+        <td>Create/configure VM instances, storage, databases, Kubernetes clusters.</td>
+      </tr>
+      <tr>
+        <td>Monitoring & Performance</td>
+        <td>Dashboards showing CPU, memory, uptime, logs, alerts.</td>
+      </tr>
+      <tr>
+        <td>Billing & Cost Management</td>
+        <td>Cost reports, usage breakdowns, budgets, billing alerts.</td>
+      </tr>
+      <tr>
+        <td>Security & Access Management</td>
+        <td>IAM roles, permissions, service accounts, audit logs.</td>
+      </tr>
+      <tr>
+        <td>SLA & Availability</td>
+        <td>Uptime metrics and reliability reports displayed visually.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Importance of GCP in Cloud Service Management</h2>
+    <p>
+      GCP unifies provisioning, monitoring, security, and billing into one UI, improving operational efficiency,
+      reducing manual effort, ensuring high availability, and helping organizations control cloud costs.
+    </p>
+    <div class="highlight">
+      <b>Exam Point:</b> GCP enables effective Cloud Service Management through centralized control, real-time monitoring, cost transparency, and strong security.
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Cloud Service Management UI – Google Cloud Platform (GCP)
+</footer>
+
+</body>
+</html>
